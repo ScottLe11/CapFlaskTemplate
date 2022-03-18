@@ -59,11 +59,20 @@ class ProfileForm(FlaskForm):
     lname = StringField('Last Name', validators=[DataRequired()]) 
     image = FileField("Image") 
     submit = SubmitField('Post')
+    role = SelectField('Role',choices=[("Teacher","Teacher"),("Student","Student")])
+    mascot = SelectField('Mascot', choices=[("Bulldogs", "Bulldogs"),("Griffin","Griffin")] )
+    
+    
+    
 
 class PostForm(FlaskForm):
     subject = StringField('Subject', validators=[DataRequired()])
     content = TextAreaField('Post', validators=[DataRequired()])
+    rating = SelectField('Rating', choices=[("1 star", "1 star"),("2 star", "2 star"),("3 star", "3 star")])
     submit = SubmitField('Post')
+    
+    
+    
 
 class CommentForm(FlaskForm):
     content = TextAreaField('Comment', validators=[DataRequired()])

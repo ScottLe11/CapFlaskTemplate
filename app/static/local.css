@@ -1,3 +1,8 @@
 .bottom-image img{
     vertical-align:bottom;
     }
+.picture{
+    height:700px;
+  width:800px;
+    background-color:blue;
+}
