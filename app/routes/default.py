@@ -9,3 +9,7 @@ def index():
 @app.route('/aboutus')
 def aboutus():
     return render_template('aboutus.html')
+
+@app.route('/entries')
+def entries():
+    return render_template('entries.html')

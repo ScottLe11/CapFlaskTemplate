@@ -1,0 +1,11 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+
+{% block body %}
+{{moment(entries.createdate).calendar()}} by {{post.author.username}} 
+{% if entries.modifydate %}
+    modified {{moment(entries.modifydate).calendar()}}
+{% endif %}
+{% endblock %}
