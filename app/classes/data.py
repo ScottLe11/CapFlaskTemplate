@@ -70,3 +70,13 @@ class Comment(Document):
     meta = {
         'ordering': ['-createdate']
     }
+    
+class Entry(Document): 
+    completed = StringField()
+    reflection = StringField()
+    createdate = DateTimeField(default=dt.datetime.utcnow)
+    modifydate = DateTimeField()
+
+    meta = {
+        'ordering': ['-createdate']
+    }

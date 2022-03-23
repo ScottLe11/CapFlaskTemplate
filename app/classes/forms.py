@@ -75,3 +75,9 @@ class PostForm(FlaskForm):
 class CommentForm(FlaskForm):
     content = TextAreaField('Comment', validators=[DataRequired()])
     submit = SubmitField('Comment')
+    
+    
+class ReflectionForm(FlaskForm):
+    completed = StringField('Completed', validators=[DataRequired()])
+    reflection = TextAreaField('Reflection', validators=[DataRequired()])
+    submit = SubmitField('Submit')
