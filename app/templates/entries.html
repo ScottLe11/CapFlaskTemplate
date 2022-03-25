@@ -2,10 +2,6 @@
 
 {% extends 'base.html' %}
 
-
 {% block body %}
-{{moment(entries.createdate).calendar()}} by {{post.author.username}} 
-{% if entries.modifydate %}
-    modified {{moment(entries.modifydate).calendar()}}
-{% endif %}
+<h1>This is my entries page</h1>
 {% endblock %}
