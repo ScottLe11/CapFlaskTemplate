@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+        <h1>Entry form</h1>
+
+        <form method=post>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.completed.label }} <br>
+                {{ form.completed(size=64) }}
+                <!--List the errors for this field-->
+                {% for error in form.completed.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.reflection.label }} <br>
+                {{ form.reflection(cols=64, rows=10) }}
+                <!--List the errors for this field-->
+                {% for error in form.reflection.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            
+            <p>
+                {{form.submit()}}
+            </p>
+        </form>
+        
+{% endblock %}

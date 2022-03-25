@@ -10,6 +10,6 @@ def index():
 def aboutus():
     return render_template('aboutus.html')
 
-@app.route('/entries')
+@app.route('/entries/new')
 def entries():
-    return render_template('entries.html')
+    return render_template('entryForm.html')
