@@ -3,5 +3,46 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<p>This will show all the entries</p>
+
+<div class="row">
+    <div class="col-4">
+        <h1 class="display-1">All Entries</h1>
+    </div>
+    <div class="col">
+        <a href="/entries/new" class="btn btn-primary btn-sm mt-5" role="button">New Entry</a>
+    </div>
+</div>
+
+{% if entries %}
+    {% for entry in entries %}
+        <div class="row border-bottom">
+            <div class="col-2">
+                {% if loop.index == 1 %}
+                <h3 class="display-5">Date</h3>
+                {% endif %}
+
+                <a href="/entry/{{entry.id}}">
+                    {{moment(entry.createdate).calendar()}}
+                </a>
+            </div>
+            <div class="col-2">
+                {% if loop.index == 1 %}
+                <h3 class="display-5">User</h3>
+                {% endif %}
+                {{entry.author.username}}
+            </div>
+            <div class="col">
+                {% if loop.index == 1 %}
+                    <h3 class="display-5">Completed</h3>
+                {% endif %}
+                {{entry.completed}}
+            </div>
+            
+        </div>
+    {% endfor %}
+{% else %}
+    <h1>No Entries :)</h1>
+{% endif %}    
 
 {% endblock %}
