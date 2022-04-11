@@ -81,7 +81,6 @@ class EntryForm(FlaskForm):
     completed = StringField('Completed', validators=[DataRequired()])
     reflection = TextAreaField('Reflection', validators=[DataRequired()])
     submit = SubmitField('Submit')
-#class ReflectionForm(FlaskForm):
- #   completed = StringField('Completed', validators=[DataRequired()])
-  #  reflection = TextAreaField('Reflection', validators=[DataRequired()])
-   # submit = SubmitField('Submit')
+
+#class TimerForm(FlaskForm):
+#    timer = SelectField('Timer', choices=[(5, "5"),(10, "10"),(15, "15")])

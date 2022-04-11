@@ -4,3 +4,4 @@ from .forum import *
 from .mail import *
 from .user import *
 from .entries import *
+from .timer import *

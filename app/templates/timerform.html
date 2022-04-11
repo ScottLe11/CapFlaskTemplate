@@ -1,0 +1,15 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"  type="text/css" />
+<div class="timer">
+    
+
+</div>
+
+<script  src="{{ url_for('static',filename='script.js') }}" type="module"></script>
+
+ 
+{% endblock %}
