@@ -1,6 +1,6 @@
 import Timer from "./timer.js";
-alert("1st")
- new Timer(
+
+new Timer(
      document.querySelector(".timer")
  );
 

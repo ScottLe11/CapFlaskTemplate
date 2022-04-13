@@ -6,7 +6,12 @@ import mongoengine.errors
 # from app.classes.forms import TimerForm
 # from flask_login import current_user
 import time
+import mimetypes
+mimetypes.add_type("application/javascript", ".js", True)
 
+DEBUG_TOOLBAR_CONFIG = {
+        'INTERCEPT_REDIRECTS': False,
+    }
 @app.route('/countdownTimer')
 def countdown():
     #   global timing
