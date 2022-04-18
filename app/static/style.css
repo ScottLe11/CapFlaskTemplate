@@ -1,3 +1,12 @@
-h1{
-    background-color:white;
+p{
+    background-color:red;
 }
+
+.timerTitle{
+    text-align: center;
+}
+
+.timer-part{
+    text-align: right;
+}
+

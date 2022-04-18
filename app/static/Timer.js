@@ -90,7 +90,7 @@ export default class Timer {
 
     static getHTML() {
         return `
-         <h1>Countdown Timer page</h1>
+         <h1 class="timerTitle" >Countdown Timer page</h1>
          <span class="timer-part timer-part-minute">00</span>
          <span class="timer-part">:</span>
          <span class="timer-part timer-part-seconds">00</span>
