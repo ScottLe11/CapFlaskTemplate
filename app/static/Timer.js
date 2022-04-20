@@ -91,12 +91,20 @@ export default class Timer {
     static getHTML() {
         return `
          <h1 class="timerTitle" >Countdown Timer page</h1>
+         <br>
+         
+         <img src="/static/treeGif.gif" class="treeGif">
+         <br>
+         <br>
+         <div class="timerOther1">
+         <div class="border border-primary timerOther border border-4">
          <span class="timer-part timer-part-minute">00</span>
          <span class="timer-part">:</span>
          <span class="timer-part timer-part-seconds">00</span>
          <button type="button" class="timer-button timer-button-control timer-button-start" id="controlButton">Start</button>
          <button type="button" class="timer-button timer-button-reset" >Reset</button>
-
+         </div>
+         </div>
 
         `;
     }

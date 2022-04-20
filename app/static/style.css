@@ -1,12 +1,40 @@
 p{
-    background-color:red;
-}
-
-.timerTitle{
+    
     text-align: center;
 }
 
-.timer-part{
-    text-align: right;
+body{
+    background-color:orange;
 }
+.timerTitle{
+    /* height:500px; */
+    display:flexbox;
+    text-align: center;
+    
+
+    
+}
+
+.timerOther{
+    width:200px;
+}
+
+.timerOther1{
+    display:flex;
+    justify-content:center;
+    
+}
+
+button {
+    justify-content:center;
+}
+
+.treeGif{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
