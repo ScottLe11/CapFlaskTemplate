@@ -1,9 +1,29 @@
+h1 {
+    text-align:center;
+}
+
 .bottom-image img{
     vertical-align:bottom;
     }
 .picture{
-    height:700px;
-    width:800px;
-    background-color:blue;
+    margin-bottom: 25px;
+    height:150px;
+    width:150px;
+    text-align: end;
+    
 }
 
+.wordPic{
+    
+    display:flex;
+    justify-content:space-around;
+}
+
+body{
+    background: rgb(176,187,241);
+background: radial-gradient(circle, rgba(176,187,241,1) 0%, rgba(222,132,150,1) 100%);    
+}
+.navbar{
+    background: rgb(176,187,241);
+background: linear-gradient(90deg, rgba(176,187,241,1) 0%, rgba(203,181,125,1) 100%);    
+}

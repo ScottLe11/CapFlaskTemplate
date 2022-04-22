@@ -73,6 +73,7 @@ export default class Timer {
 
         if(this.remainingSeconds === 0) {
             this.stop();
+            alert("Congratulations \n You've complete this work session!! ");
         }
         }, 1000);
 
@@ -86,6 +87,8 @@ export default class Timer {
 
        this.updateInterfaceControl();
     }
+
+    
 
 
     static getHTML() {
