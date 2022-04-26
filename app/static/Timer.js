@@ -73,7 +73,17 @@ export default class Timer {
 
         if(this.remainingSeconds === 0) {
             this.stop();
-            alert("Congratulations \n You've complete this work session!! ");
+            var linkJournal = confirm("Congratulations \nYou've complete this work session!! ")
+            console.log(linkJournal)
+            if (linkJournal == true){
+                document.getElementById("entries.html").innerHTML;
+                console.log("I pressed Okay");
+            }
+            else {
+                console.log("I pressed cancel");
+            }
+            
+            ;
         }
         }, 1000);
 
