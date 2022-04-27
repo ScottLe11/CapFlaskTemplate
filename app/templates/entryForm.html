@@ -6,7 +6,7 @@
         <form method=post>
             {{ form.hidden_tag() }}
             <p>
-                {{ form.completed.label }} <br>
+                What have you {{ form.completed.label }} <br>
                 {{ form.completed(size=64) }}
                 <!--List the errors for this field-->
                 {% for error in form.completed.errors %}
@@ -14,7 +14,7 @@
                 {% endfor %}
             </p>
             <p>
-                {{ form.reflection.label }} <br>
+                {{ form.reflection.label }}: How do you feel about your work session? <br>
                 {{ form.reflection(cols=64, rows=10) }}
                 <!--List the errors for this field-->
                 {% for error in form.reflection.errors %}

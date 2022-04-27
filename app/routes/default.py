@@ -10,3 +10,8 @@ def index():
 def aboutus():
     return render_template('aboutus.html')
 
+@app.route('/explaination')
+def explanation():
+    return render_template('explanation.html')
+
+

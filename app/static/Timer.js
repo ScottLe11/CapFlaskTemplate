@@ -71,12 +71,11 @@ export default class Timer {
             this.remainingSeconds--;
             this.updateInterfaceTime();
 
-        if(this.remainingSeconds === 0) {
+        if(this.remainingSeconds === 0 ) {
             this.stop();
-            var linkJournal = confirm("Congratulations \nYou've complete this work session!! ")
+            var linkJournal = confirm("Congratulations \nYou've complete this work session!!\nGo to 'Entries' to journal your thoughts ")
             console.log(linkJournal)
             if (linkJournal == true){
-                document.getElementById("entries.html").innerHTML;
                 console.log("I pressed Okay");
             }
             else {
