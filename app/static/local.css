@@ -4,13 +4,17 @@ h1 {
 }
 
 .bottom-image img{
-    vertical-align:bottom;
+    vertical-align:top;
     }
+    
 .picture{
-    margin-bottom: 25px;
+    margin-bottom: 100px;
     height:150px;
-    width:150px;
+    width:200px;
     text-align: end;
+    border-style:solid;
+    border-color:black;
+    border-width:5px;
     
 }
 
