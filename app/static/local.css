@@ -24,8 +24,12 @@ h1 {
     justify-content:space-around;
 }
 
-.picTopWord{
-    text-align:center;
+.TopWord{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    
 }
 
 body{
@@ -39,4 +43,8 @@ background: linear-gradient(90deg, rgba(176,187,241,1) 0%, rgba(203,181,125,1) 1
 
 h6, h3{
     font-family: 'Libre Franklin', sans-serif;
+}
+
+p, ol >li{
+    font-family: 'Work Sans', sans-serif;
 }
